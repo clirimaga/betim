@@ -1,6 +1,5 @@
 * {
  margin: 0;
- color: blanchedalmond;
 }
 .container {
     width: 100vw;
@@ -13,6 +12,7 @@
     background-image: url(field.jpg);
     background-size: cover;
     background-position: center;
+    color:white;
 }
 nav {
     padding: 10px 0;
@@ -63,13 +63,47 @@ span{
     padding: 20px 0;
     border-bottom: 2px solid green;
 }
+.hero p {
+    width:500px;
+    padding: 20px 0;
+    opacity: 0.9;
+    text-align: center;
+}
 hr {
     width:100px;
 }
 /* the main*/
 .main {
+    display: flex;
     height: auto;
 }
+.left {
+    display: flex;
+    width: 50%;
+    height:300px;
+    display: flex;
+    background-image: url(sketch.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.left h3 {
+    padding: 20px 30px;
+}
+.right {
+    width: 50%;
+    height:300px;
+    background-color: rgba(2, 5, 36, 0.8) ;
+    color:white;
+}
+.right h3 {
+    padding: 50px 0 10px 50px;
+}
+.right  li {
+    list-style: none;
+    padding: 15px 50px;
+}
+
+/* the footer */
 .footer {
     height: auto;
 }
