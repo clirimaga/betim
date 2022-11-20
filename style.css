@@ -1,11 +1,11 @@
-* {
+body {
  margin: 0;
 }
 .container {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 600px 1fr 20%;
+    grid-template-rows: 600px 1fr 100px;
 }
 
 .header {
@@ -49,8 +49,9 @@ span{
 
 .logo:hover,
 .list li:hover {
-    color: blue;
+    color: green;
     cursor:pointer;
+    font-weight: 700;
 }
 .hero {
     display: flex;
@@ -60,7 +61,7 @@ span{
     height:300px;
 }
 .hero h1 {
-    padding: 20px 0;
+    padding: 5px 0;
     border-bottom: 2px solid green;
 }
 .hero p {
@@ -69,16 +70,66 @@ span{
     opacity: 0.9;
     text-align: center;
 }
+.hero button {
+    padding:10px 20px;
+    background-color: transparent;
+    color:white;
+    border: 1px solid green;
+    border-radius: 20px;
+}
+.hero button:hover {
+    background-color: green;
+    color:white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
 /* the main*/
+
+
 .main {
+    padding: 5% 0 0 5%;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 500px;
+    background-color: green;
+    color:white;
 }
 
-.main ul {
-    list-style: none;
+.main button {
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
 }
-
-
+.main button:hover {
+    opacity: 0.5;
+    border: 1px solid white;
+}
+.hidden {
+    display: none;
+}
 /* the footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #060330;
+    color: white;
+}
+
+.footer div{
+    display: flex;
+    width: 30%;
+    height: 100px;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+.images img {
+ padding: 0 10px;   
+}
+.images img:hover {
+    cursor: pointer;
+}
